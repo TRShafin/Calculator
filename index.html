@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="calculator">
+        <form action="" name = "form">
+            <input type="text" readonly="" value="" placeholder="0" name="show" class="input">
+      
+
+        <div class="button-area">
+            <div class="line">
+                <input type="button" class="btn btn-primary" value="7" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="8" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="9" onclick="display(this.value)">
+                <input type="button" class="btn btn-dark division" value="/" onclick="display(this.value)">
+            </div>
+            <div class="line">
+                <input type="button" class="btn btn-primary" value="4" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="5" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="6" onclick="display(this.value)">
+                <input type="button" class="btn btn-secondary multiplication" value='*' onclick="display(this.value)">
+            </div>
+            <div class="line">
+                <input type="button" class="btn btn-primary" value="1" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="2" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="3" onclick="display(this.value)">
+                <input type="button" class="btn btn-danger minus" value="-" onclick="display(this.value)">
+            </div>
+            <div class="line">
+                <input type="button" class="btn btn-primary" value="0" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="00" onclick="display(this.value)">
+                <input type="button" class="btn btn-primary" value="." onclick="display(this.value)">
+                <input type="button" class="btn btn-success plus" value="+" onclick="display(this.value)">
+            </div>
+            <div class="line">
+                <input type="button" class="btn btn-warning cancel" value="C" onclick="show.value = null">
+                <input type="button" class="btn btn-warning " value="Del" onclick="back()">
+                <input type="button" class="btn btn-info equal" value="=" onclick="show.value = eval(show.value)">
+            </div>
+        </div>
+    </div>
+</form>
+
+    <script src = "index.js" type = "text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</body>
+</html>
